@@ -1,5 +1,4 @@
 import 'package:amazon_clone/constants/global_vaiables.dart';
-import 'package:amazon_clone/expt/figma/loggedout_screen.dart';
 import 'package:amazon_clone/features/auth/screens/auth_screen.dart';
 import 'package:amazon_clone/router.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +25,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
           iconTheme: IconThemeData(color: Colors.black),
         ),
+        useMaterial3: true,
       ),
       onGenerateRoute: (settings) => generateRoute(settings),
       home: const AuthScreen(),
